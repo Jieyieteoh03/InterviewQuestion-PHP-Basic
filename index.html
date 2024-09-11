@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Username Verification</title>
+    <style>
+      .container {
+        border: 1px solid black;
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      .input-box {
+        margin-bottom: 10px;
+      }
+      .input-box label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .submit-btn {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      .message {
+        margin-top: 10px;
+        color: #4caf50;
+      }
+      .verified {
+        color: green;
+      }
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-box">
+        <label for="username">User Name:</label>
+        <input type="text" id="username" name="username" />
+      </div>
+      <button class="submit-btn" id="submitBtn">Submit</button>
+      <p class="message" id="message"></p>
+    </div>
+
+    <script src="verify_ajax.js"></script>
+  </body>
+</html>
